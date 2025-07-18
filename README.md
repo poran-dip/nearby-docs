@@ -4,7 +4,7 @@
 
 For those unaware, **Doc Connect** was my **first ever full-stack project**, and also my **first ever hackathon**. [You can follow the entire story over here](https://github.com/poran-dip/doc-connect/README.md). 
 
-You can view what we submitted back then over on the **[`hackathon-legacy`](https://github.com/poran-dip/nearby-docs/tree/hackathon-legacy) branch** and get a glimpse at my dev journey. However, if you want to try it out yourself, maybe mess around with **`Google Maps JS API`**, I would recommend just using the `main` branch.
+You can view what we submitted back then over on the **[`hackathon-legacy`](https://github.com/poran-dip/nearby-docs/tree/hackathon-legacy) branch** and get a glimpse at my dev journey. However, if you want to try it out yourself, maybe mess around with **`Google Maps JS API`**, I would recommend just using the `main` branch for a proper UI and to avoid bloat.
 
 ### Setup instructions
 
