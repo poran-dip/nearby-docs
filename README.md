@@ -1,6 +1,6 @@
 # Nearby Docs
 
-**Nearby Docs** was made as a feature module for **[Doc Connect](https://github.com/poran-dip/doc-connect)**. This is a **temporary repository** and will soon be **archived**; the functionalities will be added over to **Doc Connect** itself.
+**Nearby Docs** was made as a feature module for **[Doc Connect](https://github.com/poran-dip/doc-connect)**. This is a **temporary repository** and has now been **archived**.
 
 For those unaware, **Doc Connect** was my **first ever full-stack project**, and also my **first ever hackathon**. [You can follow the entire story over here](https://github.com/poran-dip/doc-connect/README.md).
 
