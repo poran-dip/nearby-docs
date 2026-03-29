@@ -1,12 +1,11 @@
 {
   "name": "nearby-docs",
-  "version": "1.0.0",
-  "main": "server.js",
+  "private": true,
+  "type": "module",
   "scripts": {
+    "dev": "node server.js",
     "start": "node server.js"
   },
-  "author": "Poran Dip",
-  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2"
