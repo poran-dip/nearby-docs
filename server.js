@@ -4,7 +4,7 @@ import "dotenv/config";
 const app = express();
 const PORT = 3000;
 
-app.use(express.static("public")); // serve frontend files
+app.use(express.static("public"));
 
 app.get("/api/config", (req, res) => {
   res.json({ googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY });
@@ -16,7 +16,6 @@ app.listen(3000, () =>
   console.log(`Server running on http://localhost:${PORT}`),
 );
 
-// Dummy doctors
 const doctors = [
   {
     id: 1,
@@ -120,7 +119,6 @@ const doctors = [
   },
 ];
 
-// Fetch real distance using Google Maps Distance Matrix API
 async function getDistance(origin, destination) {
   const apiKey = process.env.GOOGLE_MAPS_API_KEY;
   const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${origin}&destinations=${destination}&key=${apiKey}`;
@@ -131,8 +129,8 @@ async function getDistance(origin, destination) {
 
     if (data.rows[0].elements[0].status === "OK") {
       return {
-        distance: data.rows[0].elements[0].distance.text, // e.g., "5.2 km"
-        duration: data.rows[0].elements[0].duration.text, // e.g., "12 mins"
+        distance: data.rows[0].elements[0].distance.text,
+        duration: data.rows[0].elements[0].duration.text,
       };
     } else {
       return { distance: "N/A", duration: "N/A" };
@@ -143,7 +141,6 @@ async function getDistance(origin, destination) {
   }
 }
 
-// Endpoint: Find nearby doctors with real road distance
 app.get("/api/doctor/request", async (req, res) => {
   const { lat, lng } = req.query;
   const userLocation = `${lat},${lng}`;
